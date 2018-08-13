@@ -1,0 +1,9 @@
+<div [ngClass]="class">
+  <h5>{{title}}</h5>
+  <h6>{{createdAt | date:'short' | uppercase}}</h6>
+  <p>{{content}}</p>
+  <div class="btn-group">
+    <button class="btn btn-default btn-success" (click)="onLoveIt()"><span></span>Love it </button>
+    <button class="btn btn-default btn-danger" (click)="onDontLoveIt()"><span></span>Don't Love it </button>
+  </div>
+</div>
